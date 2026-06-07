@@ -13,7 +13,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 		description = "Microserviço de Gestão de Escolas, Instituições e Disciplinas"),
  	servers = {
         @Server(url = "http://localhost:8083", description = "Ambiente Local (Desenvolvimento)"),
-        @Server(url = "http://localhost:8080/escola", description = "API Gateway (Produção)")
+        @Server(url = "http://localhost:8080/api/v1/orq/escola", description = "API Gateway (Produção)")
     })
 @EnableDiscoveryClient
 public class EscolaServiceApplication {
